@@ -1,0 +1,19 @@
+namespace: lirt
+name: image_builder
+version: 0.2.0
+readme: "../../../README.md"
+authors:
+- image-builder-maintainers (see OWNERS_ALIASES)
+description: Collection of ansible roles that install and configure Kubernetes orchestrator and related software compatible with UNIX and Linux operating systems.
+license:
+- Apache-2.0
+license_file: '../../../LICENSE'
+tags: ["kubernetes", "k8s", "image-building"]
+dependencies: {}
+repository: https://github.com/kubernetes-sigs/image-builder
+documentation: https://image-builder.sigs.k8s.io/
+homepage: https://image-builder.sigs.k8s.io/
+issues: https://github.com/kubernetes-sigs/image-builder/issues
+build_ignore:
+- windows
+- "*.tar.gz"
