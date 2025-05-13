@@ -9,6 +9,8 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
     - name: Ansible Publish Linux/UNIX
       uses: ansible/ansible-publish-action@v1.0.0
       with:
