@@ -12,12 +12,12 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
     - name: Ansible Publish Linux/UNIX
-      uses: ansible/ansible-publish-action@v1.0.0
+      uses: artis3n/ansible_galaxy_collection@v2
       with:
         api_key: "${ANSIBLE_GALAXY_API_KEY}"
-        src_path: "images/capi/ansible/"
+        collection_dir: "images/capi/ansible/"
     - name: Ansible Publish Windows
-      uses: ansible/ansible-publish-action@v1.0.0
+      uses: artis3n/ansible_galaxy_collection@v2
       with:
         api_key: "${ANSIBLE_GALAXY_API_KEY}"
-        src_path: "images/capi/ansible/windows/"
+        collection_dir: "images/capi/ansible/windows/"
